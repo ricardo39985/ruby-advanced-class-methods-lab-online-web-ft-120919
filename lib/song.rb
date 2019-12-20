@@ -40,6 +40,10 @@ class Song
     new_song, new_song.artist_name = create_by_name(song_name), song_artist
     new_song
   end
+  def self.create_by_name(filename)
+    new_from_filename.save
+        
+  end
   def save
     self.class.all << self
   end
