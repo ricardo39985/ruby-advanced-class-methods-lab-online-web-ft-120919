@@ -36,6 +36,7 @@ class Song
     all.sort_by { |e| e.name}
   end
   def self.new_from_filename(filename)
+    file.split(" - ")
     binding.pry
   end
   def save
