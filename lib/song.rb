@@ -32,7 +32,7 @@ class Song
     end
   end
   def self.alphabetical
-    all.sort_by { |e| e }
+    all.sort_by { |e| e.name}
   end
   def save
     self.class.all << self
