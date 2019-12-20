@@ -40,6 +40,7 @@ class Song
     song_artist = filename.split(" - ")[1].chomp(".mp3")
     sng = create_by_name(song_name)
     sng.artist_name = song_artist
+    sng
     # binding.pry
   end
   def save
