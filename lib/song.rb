@@ -26,11 +26,13 @@ class Song
   end
   def self.find_or_create_by_name(name)
     if result=find_by_name(name)
-      result
+        result
     else
       create_by_name(name)
     end
-
+    def self.alphabetical
+      all.sort_by { |e| e.name }      
+    end
   end
   def save
     self.class.all << self
