@@ -44,7 +44,7 @@ class Song
     new_from_filename(filename).save
   end
   def self.destroy_all
-    @@all.clears
+    @@all.clear
   end
   def save
     self.class.all << self
