@@ -40,8 +40,8 @@ class Song
     new_song, new_song.artist_name = create_by_name(song_name), song_artist
     new_song
   end
-  def self.create_from_filename
-    new_song = new_from_filename
+  def self.create_from_filename(filename)
+    new_song = new_from_filename(filename)
     new_song.save
   end
   def save
